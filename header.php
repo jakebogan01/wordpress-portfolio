@@ -21,28 +21,9 @@
         changeFavicon();
     </script>
     <script>
-        const defaultTheme = require('tailwindcss/defaultTheme');
-        const colors = require('tailwindcss/colors')
-
         tailwind.config = {
-            content: [
-                './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-                './vendor/laravel/jetstream/**/*.blade.php',
-                './storage/framework/views/*.php',
-                './resources/views/**/*.blade.php',
-            ],
-
             theme: {
                 extend: {
-                    colors: {
-                        sky: colors.sky,
-                        teal: colors.teal,
-                        rose: colors.rose,
-                    },
-                    fontFamily: {
-                        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-                        lato: ['Lato', ...defaultTheme.fontFamily.sans],
-                    },
                     screens: {
                         '570': '570px',
                         '700': '700px',
@@ -64,13 +45,6 @@
                     }
                 },
             },
-
-            plugins: [
-                require('@tailwindcss/forms'),
-                require('@tailwindcss/typography'),
-                require('@tailwindcss/aspect-ratio'),
-                require('@tailwindcss/line-clamp'),
-            ],
         };
     </script>
     <script type="application/ld+json">
