@@ -2,6 +2,13 @@
 
 add_action('wp_enqueue_scripts', 'portfolio_files');
 add_action('after_setup_theme', 'portfolio_features');
+add_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
+
+function ignoreCertainFiles($exclude_filters)
+{
+    $exclude_filters[] = 'themes/myportfolio/node_modules';
+    return $exclude_filters;
+}
 
 function portfolio_files(): void
 {
