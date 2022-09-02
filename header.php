@@ -79,6 +79,9 @@
         .project-carousel::-webkit-scrollbar {
             display: none; /* Chrome, Safari, Opera */
         }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="smooth-scroll antialiased bg-[#0F1119] h-full" x-data="{ showWarning: true }">
@@ -86,7 +89,7 @@
     <div class="template_one flex font-lato" x-data="{ menuStatus: false, showBar: false }">
         <nav :class="{ 'w-[3.625rem]': menuStatus, 'w-0': !menuStatus }" x-cloak="menuStatus" class="mt-10 transition-all duration-300 delay-500 overflow-hidden">
             <div class="relative flex flex-col items-center justify-center">
-                <div :class="{ 'visible': menuStatus, 'invisible': !menuStatus }" class="fixed top-8 space-y-8 invisible">
+                <div :class="{ 'visible': menuStatus, 'invisible': !menuStatus }" class="fixed top-12 space-y-8 invisible">
                     <a href="#home" class="block opacity-50 sm:hover:opacity-100 transition-opacity" aria-current="page">
                         <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300" :class="{ 'translate-y-0 opacity-100 delay-700': menuStatus, 'translate-y-10 opacity-0 delay-350': !menuStatus }" width="35" height="35" viewBox="0 0 35 35"><path d="M17.5,0A17.5,17.5,0,1,0,35,17.5,17.5,17.5,0,0,0,17.5,0Zm0,8.065,8.545,6.641v12.23H20.166V19.553H14.834v7.383H8.955V14.706Z" fill="#fff"/></svg>
                     </a>

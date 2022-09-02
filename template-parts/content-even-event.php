@@ -28,12 +28,10 @@
                 <h4 class="sm:hidden mt-2 text-2xl text-white font-bold">
                     <?php the_title();?>
                 </h4>
-                <p class="text-[#B1B7D6] font-bold sm:transition-all">
-                    <?php the_content(); ?>
-                </p>
+                <?php the_content(); ?>
             </div>
             <div class="flex" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
-                <div class="pr-[3.125rem] -mt-1.5 sm:transition-all">
+                <div class="w-[152px] -mt-1.5 sm:transition-all">
                     <span class="block font-black text-[2.75rem] text-[#FFCF7B] leading-none">
                         <?php echo $eventDate->format('Y') ?>
                     </span>

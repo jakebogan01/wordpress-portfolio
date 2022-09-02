@@ -93,7 +93,7 @@
                                 <li class="bg-[#4046FF] sm:bg-[#555C7E] mt-0 sm:mt-12 card relative sm:hover:bg-[#4046FF] h-[300px] p-[30px] sm:transition-all" data-aos="zoom-in-right" data-aos-delay="100">
                                     <div class="flex justify-center pb-4">
                                         <div class="sm:absolute top-0 sm:left-3/4 sm:-translate-x-1/2 sm:-translate-y-1/2 flex items-center justify-center text-[#4046FF] w-[65px] h-[65px] rounded-full sm:transition-all" style="background-image: linear-gradient(to bottom right, #FFD279, #FFF659);">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="39.773" viewBox="0 0 35 39.773" fill="currentColor"><path d="M28.089,11.659l.4-4.351H6.513L7.681,20.582H22.894l-.547,5.668-4.9,1.317L12.577,26.25l-.323-3.48H7.9l.547,6.911,9,2.486h.1v-.024l8.925-2.461,1.243-13.523H11.709l-.372-4.5H28.091ZM0,0H35L31.818,35.746,17.45,39.773,3.182,35.746Z"/></svg>
+                                            <?php echo get_field('icon'); ?>
                                         </div>
                                     </div>
                                     <div class="space-y-4 text-base font-bold leading-loose text-white text-center sm:text-left">
@@ -115,9 +115,7 @@
                                 <li class="bg-[#555C7E] card relative sm:hover:bg-[#4046FF] h-[300px] p-[30px] sm:transition-all" data-aos="zoom-in-left" data-aos-delay="">
                                     <div class="flex justify-center pb-4">
                                         <div class="sm:absolute top-0 sm:left-3/4 sm:-translate-x-1/2 sm:-translate-y-1/2 flex items-center justify-center text-[#4046FF] w-[65px] h-[65px] rounded-full sm:transition-all" style="background-image: linear-gradient(to bottom right, #FFD279, #FFF659);">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor">
-                                                <path d="M0 0h35l-3.183 35.938L17.461 40 3.186 35.937Zm28.483 7.356L6.517 7.35l.356 4.37h16.876l-.426 4.527H12.256l.4 4.288h10.3l-.606 5.875-4.85 1.34-4.928-1.35-.313-3.517h-4.35l.483 6.424 9.108 2.839 8.95-2.546 2.029-22.24Z"/>
-                                            </svg>
+                                            <?php echo get_field('icon'); ?>
                                         </div>
                                     </div>
                                     <div class="space-y-4 text-base font-bold leading-loose text-white text-center sm:text-left">
@@ -237,12 +235,10 @@
                                             <h4 class="sm:hidden mt-2 text-2xl text-white font-bold lg:text-right">
                                                 <?php the_title(); ?>
                                             </h4>
-                                            <p class="text-[#B1B7D6] font-bold lg:text-right sm:transition-all">
-                                                <?php the_content(); ?>
-                                            </p>
+                                            <?php the_content(); ?>
                                         </div>
                                         <div class="flex" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
-                                            <div class="pr-[3.125rem] lg:pr-0 lg:pl-[3.125rem] -mt-1.5 lg:text-right sm:transition-all">
+                                            <div class="pr-[3.125rem] lg:pr-0 w-[152px] -mt-1.5 lg:text-right sm:transition-all">
                                                 <span class="block font-black text-[2.75rem] text-[#FFCF7B] leading-none">
                                                     <?php echo $eventDate->format('Y') ?>
                                                 </span>
